@@ -21,7 +21,7 @@ const App = () => {
       setLoading(true);
       const response = await axios.get(`https://api.unsplash.com/search/photos`, {
         params: { query, page },
-        headers: { Authorization: 'Client-ID YOUR_ACCESS_KEY' },
+        headers: { Authorization: 'Client-ID eRno-p5UfwxkEU8hgeLNMLGWvBFS3Qllk8M16ufquGg' },
       });
       setImages(prevImages => [...prevImages, ...response.data.results]);
     } catch (err) {
